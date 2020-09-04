@@ -5,7 +5,7 @@ import { isValidProp } from "./Utils/isValidProp.js"
 import bgImage from "./models/Image.js"
 import Quote from "./models/Quote.js"
 
-// TODO you will want to add all your other data to the AppState
+
 class AppState extends EventEmitter {
   /** @type {Todo[]} */
   todos = []
