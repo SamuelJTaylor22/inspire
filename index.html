@@ -15,12 +15,26 @@
 
         </div>
         <div class="row">
+            <div class="col-12 text-light text-shadow">
+                <h1 id="time"></h1>
+                <h2>Hello, Awesome!</h2>
+            </div>
             <div class="col">
                 <h3 id="weather"class="text-shadow text-light"></h3>
             </div>
-            <div class="col text-light text-shadow">
-                <h1 id="time"></h1>
-                <h2>Hello, Awesome!</h2>
+            <div class="col-4" id="">
+                <div class="card">
+                    <div class="card-header">Todo</div>
+                    <div class="card-body" id="todo">
+                    </div>
+                </div>
+                <form class="form-inline mt-2" onsubmit="app.todoController.addTodo(event)">
+                    <div class="form-group text-light text-shadow">
+                        <label for="tododesc">Add item</label>
+                        <input type="text" name="tododesc" id="tododesc" class="form-control" placeholder="" aria-describedby="helpId">
+                        <button type="submit" class="btn btn-success">Add</button>
+                    </div>
+                </form>
             </div>
         </div>
 

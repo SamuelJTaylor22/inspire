@@ -107,7 +107,7 @@ The todos portion of this project is the largest and will probably take the most
 - [X] The image should be on large display with at least one other element positioned over the top of the image.
 - [X] When adding a Todo the page does not reload
 - [ ] Completed Todo's checkbox remains checked on reload ([hint: checked attribute](https://www.w3schools.com/tags/att_input_checked.asp))
-- [ ] A clock shows the accurate time in the middle of the screen and updates appropriately
+- [X] A clock shows the accurate time in the middle of the screen and updates appropriately
    
  ### Functionality
  - [ ] Todo's can be added to a list (POST)
