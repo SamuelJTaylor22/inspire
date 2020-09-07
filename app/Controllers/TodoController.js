@@ -12,11 +12,13 @@ export default class TodoController {
   constructor() {
     ProxyState.on("todos", _drawTodos)
     todoService.getTodos();
+    console.log(ProxyState.todos);
   }
 
   getTodos() {
     try {
       todoService.getTodos()
+
     } catch (error) {
       console.error(error)
     }

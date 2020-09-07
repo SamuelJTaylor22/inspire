@@ -10,7 +10,9 @@ class TodoService {
   async getTodos() {
     console.log("Getting the Todo List");
     let res = await api.get(url);
-    ProxyState.todos = res.data.data.map(t =>new Todo(t))
+    let newdata = res.data.data.map(t =>new Todo(t))
+    console.log(newdata)
+    ProxyState.todos = newdata
   }
 
   async addTodo(todo) {
