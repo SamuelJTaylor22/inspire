@@ -60,6 +60,10 @@ ul{
   list-style: none;
 }
 
+main{
+  background-size: cover;
+}
+
 
 body {
   margin: 0;
