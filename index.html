@@ -24,8 +24,11 @@
             </div>
             <div class="col-4" id="">
                 <div class="card">
-                    <div class="card-header">Todo</div>
-                    <div class="card-body" id="todo">
+                    <div class="card-header">Todo: <span id="count"></span> items remaining</div>
+                    <div class="card-body" >
+                        <ul id="todo">
+
+                        </ul>
                     </div>
                 </div>
                 <form class="form-inline mt-2" onsubmit="app.todoController.addTodo(event)">

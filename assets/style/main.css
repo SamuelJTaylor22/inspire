@@ -56,7 +56,13 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 .text-shadow{
   text-shadow: 1px 1px 1px black;
 }
+ul{
+  list-style: none;
+}
 
+main{
+  background-size: cover;
+}
 
 
 body {
