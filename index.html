@@ -22,22 +22,22 @@
             <div class="col">
                 <h3 id="weather"class="text-shadow text-light"></h3>
             </div>
-            <div class="col-4" id="">
+            <div class="col-4 d-flex flex-column align-items-end" id="">
                 <div class="card">
                     <div class="card-header">Todo: <span id="count"></span> items remaining</div>
                     <div class="card-body" >
                         <ul id="todo">
 
                         </ul>
+                        <form class="form-inline mt-2" onsubmit="app.todoController.addTodo(event)">
+                            <div class="form-group">
+                                <label for="tododesc">Add item</label>
+                                <input type="text" name="tododesc" id="tododesc" class="form-control" placeholder="" aria-describedby="helpId">
+                                <button type="submit" class="btn btn-success">Add</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <form class="form-inline mt-2" onsubmit="app.todoController.addTodo(event)">
-                    <div class="form-group text-light text-shadow">
-                        <label for="tododesc">Add item</label>
-                        <input type="text" name="tododesc" id="tododesc" class="form-control" placeholder="" aria-describedby="helpId">
-                        <button type="submit" class="btn btn-success">Add</button>
-                    </div>
-                </form>
             </div>
         </div>
 
